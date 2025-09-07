@@ -1,4 +1,4 @@
-# 🌍 Dynamic GOES-19 Satellite Wallpaper (Windows)
+#  Dynamic GOES-19 Satellite Wallpaper (Windows)
 
 This repo will automatically updates your Windows wallpaper with the latest **GOES-19 satellite imagery (Canada sector, geocolor composite)**.  
 It fetches the newest image from NOAA’s servers, saves it locally, and applies it as your wallpaper.  
