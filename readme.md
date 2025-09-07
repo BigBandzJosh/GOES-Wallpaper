@@ -59,6 +59,5 @@ Using **Task Scheduler**, it can refresh automatically in the background. (Must 
 - Resolution is 9000×4500, which looks great on 1080p and higher displays.  
 - NOAA updates GOES imagery every 10–15 minutes.  
 
----
 
 
