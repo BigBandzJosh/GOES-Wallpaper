@@ -4,7 +4,7 @@ This repo will automatically updates your Windows wallpaper with the latest **GO
 It fetches the newest image from NOAA’s servers, saves it locally, and applies it as your wallpaper.  
 Using **Task Scheduler**, it can refresh automatically in the background. (Must implement on your own)
 
----
+
 
 ##  Files in this repo 
 - **`goes_wallpaper.py`**  
@@ -16,14 +16,13 @@ Using **Task Scheduler**, it can refresh automatically in the background. (Must 
 - **`wallpaper_runner.vbs`**  
   A wrapper that runs the Python script **in the background** (no prompts at all).  
 
----
+
 
 ## How It Works
 1. `wallpaper_runner.vbs` launches the Python script hidden.  
 2. The Python script scrapes the NOAA site, finds the newest 9000×4500 image, downloads it, and updates your wallpaper.  
 3. Task Scheduler runs the `.vbs` file on a set interval (e.g., every 30 minutes).  
 
----
 
 ## Setting Up Task Scheduler
 
@@ -53,7 +52,6 @@ Using **Task Scheduler**, it can refresh automatically in the background. (Must 
     -  *Run whether user is logged on or not*  
     -  *Run with highest privileges*  
 
----
 
 ##  Notes
 - Requires Python 3.11+ and the packages `requests` + `beautifulsoup4`.  
