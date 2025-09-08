@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import ctypes
 import winreg
+from PIL import Image
 
 # Paths
 local_path = os.path.expanduser(r"~\Pictures\goes_canada.jpg")
@@ -29,6 +30,13 @@ print(f"Downloading latest image: {latest_image}")
 img_data = requests.get(image_url, headers=headers).content
 with open(local_path, 'wb') as f:
     f.write(img_data)
+
+img = Image.open(local_path)
+taskbar_height = 200
+
+new_img = Image.new("RGB", (img.width, img.height + taskbar_height), (0, 0, 0))
+new_img.paste(img, (0, 0))
+new_img.save(local_path)
 
 
 # (This part went a little over my head in terms of how to actually interact with Windows, so AI was used here!)
