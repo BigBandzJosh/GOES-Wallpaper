@@ -8,7 +8,6 @@ Using **Task Scheduler**, it can refresh automatically in the background. (Must 
 
 ##  Files in this repo 
 - **`goes_wallpaper.py`**  
-  Python script that:
   - Downloads the most recent GOES-19 Canada image.  
   - Saves it to your `Pictures` folder.  
   - Sets it as your wallpaper.  
